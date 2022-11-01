@@ -1,0 +1,60 @@
+file to room
+2
+2
+Đề tài.pptx
+594030
+file to room
+2
+2
+Untitled1.c
+424
+#include<stdio.h>
+#include<io.h>  
+#include<stdlib.h>
+#include <fcntl.h> 
+int main() 
+{ 
+    int fd1 = open("foo.txt", O_RDONLY); 
+    if (fd1 < 0) 
+    { 
+        perror("c1"); 
+        exit(1); 
+    } 
+    printf("opened the fd = % d\n", fd1); 
+      
+    // Using close system Call 
+    if (close(fd1) < 0) 
+    { 
+        perror("c1"); 
+        exit(1); 
+    } 
+    printf("closed the fd.\n"); 
+} 
+request create room
+sa
+group
+3
+huy
+ads
+hai
+request create room
+sdsa
+group
+3
+huy
+ads
+hai
+request create room
+dsa
+group
+3
+huy
+ads
+hai
+request create room
+dá
+group
+3
+huy
+ads
+hai
